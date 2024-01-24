@@ -1,5 +1,5 @@
 ARG REGISTRY_NAME
-FROM acrlarn/baseimages/nginx:alpine
+FROM ${REGISTRY_NAME}/baseimages/nginx:alpine
 
 COPY index.html /usr/share/nginx/html
 COPY config.js /usr/share/nginx/html
